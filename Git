@@ -1,0 +1,5 @@
+git clone https://github.com/carpedm20/DCGAN-tensorflow.git
+git checkout -b mybranch
+git commit -A (update all modified files)
+git push ( upload to server)
+git reset ( want to comeback to previous version)
