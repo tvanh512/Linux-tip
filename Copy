@@ -1,0 +1,9 @@
+If test has text1.txt, text2.txt....
+cp -avr /home/vietanh/test/. /home/vietanh/abc
+--> abc/text1.txt, abc/text2.txt
+
+cp -avr /home/vietanh/test /home/vietanh/abc
+--> abc/test/text1.txt, abc/test/text2.txt
+
+#Upload to server
+scp -r /Users/VietAnh/localmachine/directory... usernameh@146.245.250.184:/home/server/directory/
