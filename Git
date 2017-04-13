@@ -3,3 +3,12 @@ git checkout -b mybranch
 git commit -A (update all modified files)
 git push ( upload to server)
 git reset ( want to comeback to previous version)
+
+git clone git@github.com:speechLabBcCuny/pyConcatResyn.git
+Create Branch:
+git checkout -b Autobi
+Down branch Autobi from website to server
+git pull origin Autobi
+maybe need to
+git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
