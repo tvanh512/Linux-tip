@@ -16,3 +16,5 @@ git config --global user.email "you@example.com"
 In local machine go to .ssh and 
 cat id_rsa.pub
 Copy the content of the file and add the public key to your github list of keys
+With the public key
+git clone git@github.com:speechLabBcCuny/bubbleAdversarialNetwork.git
