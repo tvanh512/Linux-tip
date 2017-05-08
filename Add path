@@ -1,0 +1,5 @@
+echo $PATH
+/Users/VietAnh/anaconda/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin
+Viets-MacBook-Pro:~ VietAnh$ export PATH=/usr/local/Cellar/mpich/3.2_2/bin:$PATH
+Viets-MacBook-Pro:~ VietAnh$ echo $PATH
+/usr/local/Cellar/mpich/3.2_2/bin:/Users/VietAnh/anaconda/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin
