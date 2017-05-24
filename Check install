@@ -1,0 +1,2 @@
+Check install on mac
+grep 'Installed' /private/var/log/install.log
