@@ -19,7 +19,7 @@ maybe need to
 git config --global user.email "you@example.com"
   git config --global user.name "Your Name"
   
-In local machine go to .ssh and 
+In local machine go to .ssh : cd ~/.ssh and 
 cat id_rsa.pub
 Copy the content of the file and add the public key to your github list of keys
 With the public key
