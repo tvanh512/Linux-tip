@@ -1,3 +1,8 @@
+Commit a single file
+git add .
+git commit -m "Add existing file"
+git push origin master
+
 git clone https://github.com/carpedm20/DCGAN-tensorflow.git
 git checkout -b mybranch
 git commit -A (update all modified files)
