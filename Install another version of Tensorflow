@@ -5,3 +5,19 @@ source ~/tensorflow09/bin/activate
 Step 3:
 export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.9.0-cp27-none-linux_x86_64.whl
 pip install --ignore-installed --upgrade $TF_BINARY_URL
+
+Next Steps
+
+After installing TensorFlow, validate the installation.
+
+Note that you must activate the virtualenv environment each time you use TensorFlow. If the virtualenv environment is not currently active, invoke one of the following commands:
+
+$ source ~/tensorflow/bin/activate      # bash, sh, ksh, or zsh
+$ source ~/tensorflow/bin/activate.csh  # csh or tcsh
+When the virtualenv environment is active, you may run TensorFlow programs from this shell. Your prompt will become the following to indicate that your tensorflow environment is active:
+
+(tensorflow)$ 
+When you are done using TensorFlow, you may deactivate the environment by invoking the deactivate function as follows:
+
+(tensorflow)$ deactivate 
+The prompt will revert back to your default prompt (as defined by the PS1 environment variable).
