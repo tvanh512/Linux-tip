@@ -26,3 +26,7 @@ When you are done using TensorFlow, you may deactivate the environment by invoki
 
 (tensorflow)$ deactivate 
 The prompt will revert back to your default prompt (as defined by the PS1 environment variable).
+
+Install Jupyter Notebook for this version of Tensorflow
+$ pip install IPython==5.0 --user
+$ pip install jupyter --user
