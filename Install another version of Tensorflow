@@ -1,7 +1,7 @@
-Step 1: Create Tensorflow folder name tensorflow09 under home directory ( make directory tensorflow09 first)
-virtualenv --system-site-packages ~/tensorflow09
+Step 1: Create Tensorflow folder name tensorflow011 under home directory ( make directory tensorflow011 first)
+virtualenv --system-site-packages ~/tensorflow011
 Step 2: Activate
-source ~/tensorflow09/bin/activate
+source ~/tensorflow011/bin/activate
 
 Step 3:
 Find the version
@@ -17,8 +17,8 @@ After installing TensorFlow, validate the installation.
 
 Note that you must activate the virtualenv environment each time you use TensorFlow. If the virtualenv environment is not currently active, invoke one of the following commands:
 
-$ source ~/tensorflow/bin/activate      # bash, sh, ksh, or zsh
-$ source ~/tensorflow/bin/activate.csh  # csh or tcsh
+$ source ~/tensorflow011/bin/activate      # bash, sh, ksh, or zsh
+$ source ~/tensorflow011/bin/activate.csh  # csh or tcsh
 When the virtualenv environment is active, you may run TensorFlow programs from this shell. Your prompt will become the following to indicate that your tensorflow environment is active:
 
 (tensorflow)$ 
