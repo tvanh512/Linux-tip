@@ -8,7 +8,7 @@ Find the version
 curl -s https://storage.googleapis.com/tensorflow |xmllint --format - |grep whl
 
 
-export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.9.0-cp27-none-linux_x86_64.whl
+export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.11.0rc2-cp27-none-linux_x86_64.whl
 pip install --ignore-installed --upgrade $TF_BINARY_URL
 
 Next Steps
