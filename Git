@@ -1,3 +1,5 @@
+https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+
 Commit a single file
 git add .
 git commit -m "Add existing file"
@@ -39,6 +41,10 @@ you should at least see origin — that is the default name Git gives to the
 You can also specify -v, which shows you the URLs that Git has stored for the shortname
 to be used when reading and writing to that remote:
 git remote -v
+
+Now you can use the string pb on the command line in lieu of the whole URL. 
+For example, if you want to fetch all the information that Paul 
+has but that you don’t yet have in your repository, you can run git fetch pb:
   
 In local machine go to .ssh : cd ~/.ssh and 
 cat id_rsa.pub
