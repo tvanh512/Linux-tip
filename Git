@@ -3,8 +3,6 @@ git add .
 git commit -m "Add existing file"
 git push origin master
 
-
-
 git clone https://github.com/carpedm20/DCGAN-tensorflow.git
 git checkout -b mybranch
 git commit -A (update all modified files)
@@ -22,6 +20,9 @@ doc/*.txt
 
 # ignore doc/notes.txt, but not doc/server/arch.txt
 doc/*.txt
+
+rename
+git mv README.md README
 
 git clone git@github.com:speechLabBcCuny/pyConcatResyn.git
 Create Branch:
