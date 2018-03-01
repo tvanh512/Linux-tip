@@ -32,8 +32,13 @@ git pull origin Autobi
 maybe need to
 git config --global user.email "you@example.com"
   git config --global user.name "Your Name"
- 
 
+you can run the git remote command.If you’ve cloned your repository,
+you should at least see origin — that is the default name Git gives to the server you cloned from:
+
+You can also specify -v, which shows you the URLs that Git has stored for the shortname
+to be used when reading and writing to that remote:
+git remote -v
   
 In local machine go to .ssh : cd ~/.ssh and 
 cat id_rsa.pub
