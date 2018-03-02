@@ -166,3 +166,5 @@ git merge master
 
 In order to push to remote repository
 git push origin va_branch:branch_name_on_server
+Check more at:
+https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches
