@@ -111,3 +111,40 @@ See 'git help config' and search for 'push.default' for further information.
 
 Everything up-to-date
 
+1. Create a git from an old project
+for Linux:
+$ cd /home/user/my_project
+for Mac:
+$ git init
+
+2. Add/Commit
+File state:
+- Tracked or untracked. 
+- Tracked files can be unmodified, modified, or staged.
+Need to track files, by "git add", so these files are "staged". 
+Later, when we "git commit", only "staged" files are being commit. 
+To track file
+$ git add abc.py
+To commit staged file
+$ git commit
+or with comment:
+$ git commit -m "Add abcd....."
+To combine "add" and "commit" step, when we add all changed files to "stage"
+git commit -a -m 'Add abcd.....'
+That’s because the -a flag includes all changed files
+
+3. Rename file
+git mv README.md README
+
+4. Branch basic
+
+git clone git@github.com:speechLabBcCuny/bubbleAdversarialNetwork.git
+git branch va_branch
+git checkout va_branch
+
+Do some work, then
+git commit -a -m 'improve something'
+
+If the master change:
+git merge master
+
