@@ -145,6 +145,9 @@ The remote repository is called" Origin" and the local repository is called "Mas
 git branch va_branch
 git checkout va_branch
 
+to combine create branch and check out:
+git checkout -b va_branch
+
 Do some work, then
 git commit -a -m 'improve something'
 
