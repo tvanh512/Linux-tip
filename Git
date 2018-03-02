@@ -164,3 +164,5 @@ git checkout va_branch
 and then
 git merge master
 
+In order to push to remote repository
+git push origin va_branch:branch_name_on_server
