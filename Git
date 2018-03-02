@@ -139,12 +139,28 @@ git mv README.md README
 4. Branch basic
 
 git clone git@github.com:speechLabBcCuny/bubbleAdversarialNetwork.git
+The remote repository will be download to local repository. 
+The remote repository is called" Origin" and the local repository is called "Master"
+
 git branch va_branch
 git checkout va_branch
 
 Do some work, then
 git commit -a -m 'improve something'
 
-If the master change:
+
+If the remote repository change:
+first update the local repository master. Change to the master repository
+git checkout master
+Then do 2 steps: fetch then merge:
+git fetch origin
+git merge origin
+
+Or combine into 1 step: git pull
+git pull command to automatically fetch and then merge that remote branch into your current branch
+
+After that, switch to the branch repository, and then
+git checkout va_branch
+and then
 git merge master
 
