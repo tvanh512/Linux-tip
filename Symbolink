@@ -1,0 +1,2 @@
+Want to create a symbolink folder for autobi in xyz. Autobi currently in abc, and we don't want to copy it to xyz, just a symbolink
+ln -s /scratch/vietanh/abc/autobi /scratch/vietanh/xyz
