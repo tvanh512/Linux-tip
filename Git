@@ -176,3 +176,21 @@ In order to push to remote repository
 git push origin va_branch:branch_name_on_server
 Check more at:
 https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches
+
+To unstage file:
+git reset Untitled2.ipynb
+
+To commit/merge to the Github:
+- Update the current branch first:
+  git add.
+  git commit -m "autobi hyperparameter"
+- From the current branch, merge with master
+  git merge master
+- go to master, and then pull the newest change from origin, then merge the change from origin to master
+  git checkout master
+  git pull 
+  git merge
+- In master, after merge with origin, we need to merge with the branch anh1
+  git merge anh1
+- Then upload from master(server) to the origin(github)
+  git push origin master
