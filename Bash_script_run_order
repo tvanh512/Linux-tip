@@ -1,0 +1,42 @@
+https://unix.stackexchange.com/questions/313148/does-a-shell-script-execute-commands-sequentially
+In:
+
+cmd1
+cmd2
+or
+
+cmd1; cmd2
+They are executed sequentially.
+
+In
+
+cmd1 && cmd2
+Or
+
+cmd1 || cmd2
+They are executed sequentially but whether cmd2 is executed at all depends on whether cmd1 succeeds (for &&) or fails (for ||).
+
+In
+
+cmd1 | cmd2
+or
+
+cmd1 & cmd2
+cmd1 |& cmd2 # ksh
+coproc cmd1; cmd2 # bash/zsh
+or
+
+cmd1 <(cmd2) # ksh/zsh/bash (also yash though with a different meaning)
+They are executed concurrently. In the first case, some shells only wait for cmd2 before carrying on with the rest of the script while some wait for both. In the second case, shells only wait for cmd2 (cmd1 is said to be run asynchronously (or in background when run in an interactive shell)) and in the third for cmd1 (cmd2 asynchronous).
+
+In:
+
+< "$(cmd1)" x=$(cmd2) y=$(cmd3) cmd4 "$(cmd5)" > "$(cmd6)"
+Commands are run sequentially, but the order depends on the shell. In any case, cmd4 will be executed last.
+
+In:
+
+cmd1 =(cmd2) # zsh
+They are executed sequentially (cmd2 first).
+
+Note that in all those cases, any of those commands could start other processes. The shell would have no knowledge of them so can't possibly wait for them.
