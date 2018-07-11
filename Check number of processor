@@ -1,1 +1,3 @@
 nproc
+Install Kaldi (or other C) on 24 processor: 
+make -j 24
