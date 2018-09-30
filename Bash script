@@ -37,3 +37,5 @@ Victor foo-bar Von oni
 Victor eeny-meeny Von miny
 Victor larry-curly Von moe
 Victor jimmy-the Von weasel
+
+Use \/ to quote the forward slash in the sed command.
