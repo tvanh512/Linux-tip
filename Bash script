@@ -9,3 +9,31 @@ Or to check if a directory doesn't exist:
 if [ ! -d "$DIRECTORY" ]; then
   # Control will enter here if $DIRECTORY doesn't exist.
 fi
+
+
+Using sed
+https://www.funtoo.org/Sed_by_Example,_Part_2
+
+As an example, let's say we have a file that contains the following text:
+
+foo bar oni
+eeny meeny miny
+larry curly moe
+jimmy the weasel
+
+Now, let's say we wanted to write a sed script that would replace "eeny meeny miny" with "Victor eeny-meeny Von miny", etc. To do this, first we would write a regular expression that would match the three strings, separated by spaces:
+
+'.* .* .*'
+
+here. Now, we will define regions by inserting backslashed parentheses around each region of interest:
+
+'\(.*\) \(.*\) \(.*\)'
+This regular expression will work the same as our first one, except that it will define three logical regions that we can refer to in our replacement string. Here's the final script:
+
+$ sed -e 's/\(.*\) \(.*\) \(.*\)/Victor \1-\2 Von \3/' myfile.txt
+As you can see, we refer to each parentheses-delimited region by typing '\x', where x is the number of the region, starting at one. Output is as follows:
+
+Victor foo-bar Von oni
+Victor eeny-meeny Von miny
+Victor larry-curly Von moe
+Victor jimmy-the Von weasel
