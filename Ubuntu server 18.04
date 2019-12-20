@@ -1,3 +1,12 @@
 Do not use the default version (live) which has problem with NVME driver. Use Ubuntu server 18.04 without live
 BIOS: do not choose RAID
 Set up OpenSSH: https://vitux.com/how-to-remotely-manage-a-ubuntu-server-with-ssh/
+IP address
+https://www.howtoforge.com/linux-basics-set-a-static-ip-on-ubuntu
+Default is here
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    <name>:
+      dhcp4: no
