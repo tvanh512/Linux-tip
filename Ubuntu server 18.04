@@ -22,3 +22,5 @@ Pre-requirement for CUDA
   Check kernel
     uname -r
     -->4.15.0-55-generic
+  Ubuntu:The kernel headers and development packages for the currently running kernel can be installed with:
+    $ sudo apt-get install linux-headers-$(uname -r)
