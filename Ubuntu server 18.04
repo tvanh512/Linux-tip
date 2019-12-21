@@ -10,3 +10,5 @@ network:
   ethernets:
     <name>:
       dhcp4: no
+create key: can use copy in case window doesn't have cat      
+http://www.linuxproblem.org/art_9.html
