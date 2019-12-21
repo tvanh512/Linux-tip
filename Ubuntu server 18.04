@@ -12,3 +12,13 @@ network:
       dhcp4: no
 create key: can use copy in case window doesn't have cat      
 http://www.linuxproblem.org/art_9.html
+
+Pre-requirement for CUDA
+  https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#pre-installation-actions
+  Install Development tool:
+    sudo apt-get update
+    sudo apt-get install build-essential
+    check: gcc --version
+  Check kernel
+    uname -r
+    -->4.15.0-55-generic
