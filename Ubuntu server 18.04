@@ -24,7 +24,7 @@ Pre-requirement for CUDA
     -->4.15.0-55-generic
   Ubuntu:The kernel headers and development packages for the currently running kernel can be installed with:
     $ sudo apt-get install linux-headers-$(uname -r)
-Download CUDA
+Download and install CUDA
   Follow https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1804&target_type=deblocal
   wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin
   sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600
@@ -33,9 +33,9 @@ Download CUDA
   sudo apt-key add /var/cuda-repo-10-2-local-10.2.89-440.33.01/7fa2af80.pub
   sudo apt-get update
   sudo apt-get -y install cuda
-Add CUDA to path
+Add CUDA to path (https://towardsdatascience.com/build-and-setup-your-own-deep-learning-server-from-scratch-e771dacaa252)
   echo 'export PATH=/usr/local/cuda/bin:$PATH' >> ~/.bashrc
   echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
   source ~/.bashrc
   nvcc -V  ( check CUDA version)
-  Cuda compilation tools, release 10.2, V10.2.89
+  >>Cuda compilation tools, release 10.2, V10.2.89
