@@ -1,0 +1,5 @@
+start=`date +%s`
+sleep 3
+end=`date +%s`
+time=$((end-start))
+echo program takes $time second
