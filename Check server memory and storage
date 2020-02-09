@@ -3,3 +3,5 @@ watch -n 0.1 'ps f -o user,pgrp,pid,pcpu,pmem,start,time,command -p `nvidia-smi 
 watch -n 0.1 'ps f -o user,pgrp,pid,pcpu,pmem,start,time,command -p `nvidia-smi --query-compute-apps=pid --format=csv,noheader`'
 
 watch -n 5 free -m
+
+du --threshold=10M -h | sort -h
