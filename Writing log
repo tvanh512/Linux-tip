@@ -1,0 +1,9 @@
+command  > file.txt  The regular way of redirecting the standard output
+command  | tee file.txt Using tee with overwriting
+command  | tee -a file.txt  Using tee with appending
+
+command  &> file.txt The regular way of redirecting the standard output and error
+command  |& tee file.txt  Using tee with overwriting
+command  |& tee -a file.txt Using tee with appending
+The 1 denotes standard output (stdout). The 2 denotes standard error (stderr).
+So 2>&1 says to send standard error to where ever standard output is being redirected as well.
