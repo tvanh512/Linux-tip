@@ -1,0 +1,16 @@
+# Start Passing named arguments: Code from https://unix.stackexchange.com/a/353639
+for ARGUMENT in "$@"
+do
+
+    KEY=$(echo $ARGUMENT | cut -f1 -d=)
+    VALUE=$(echo $ARGUMENT | cut -f2 -d=)   
+
+    case "$KEY" in
+            inDir)              inDir=${VALUE} ;;
+            outDir)    outDir=${VALUE} ;;     
+            *)   
+    esac    
+done
+start=`date +%s`
+echo "inDir is $inDir"
+echo "outDir is $outDir"
