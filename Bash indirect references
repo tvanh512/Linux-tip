@@ -1,0 +1,9 @@
+https://unix.stackexchange.com/questions/255854/how-to-do-indirect-variable-evaluation
+path1="a/b/c"
+path2="c/d/f"
+...
+for i in {1..10}
+	do
+	   pathDelete="path${i}"
+	   echo "Delete ${!pathDelete}"
+	done
