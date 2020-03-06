@@ -1,0 +1,7 @@
+Take the first field, seperate by '.'
+temp=$(echo $wavFile | cut -d'.' -f 1)
+Take the second last field, seperate by '_'
+$ echo $wavBaseDir | rev | cut -d'/' -f 2 | rev
+tdnn_rnnlm_lstm_tdnn_1a_rnnweight0.5_ngram4_bps70_snr0_ascore8_03_OUR
+$ echo $wavBaseDir | rev | cut -d'_' -f 2 | rev
+03
