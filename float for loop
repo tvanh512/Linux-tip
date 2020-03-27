@@ -1,0 +1,5 @@
+https://unix.stackexchange.com/questions/226803/bash-loop-with-0-02-increment
+for i in $(seq 1.00 0.02 2.02)
+do 
+  echo $i 
+done
