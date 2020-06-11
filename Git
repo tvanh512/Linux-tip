@@ -194,3 +194,19 @@ To commit/merge to the Github:
   git merge anh1
 - Then upload from master(server) to the origin(github)
   git push origin master
+
+Note : in order for the modified file on branch doesn't appear on master, we need to commit this file
+git clone ....
+git branch testRandomSeed # Create branch testRandomSeed
+git checkout testRandomSeed
+(or use git checkout -b testRandomSeed to create and switch to new branch)
+create new file:
+nano test.py
+git add test.py
+git commit -m 'my notes' test.py
+
+In case modifying old file then git commit (no need to run git add)
+
+To update the modified file from branch to master:
+git checkout master               # first get back to master
+git checkout testRandomSeed -- test.py # copy the version of test.py from branch "testRandomSeed" to master
